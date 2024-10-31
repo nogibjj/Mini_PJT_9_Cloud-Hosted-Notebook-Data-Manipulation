@@ -9,7 +9,8 @@ from mylib.lib import (
 
 def test_main_execution():
     # Load data
-    df = load_data("HR.csv")
+    file_path = "https://raw.githubusercontent.com/nogibjj/Mini_PJT_9_Cloud-Hosted-Notebook-Data-Manipulation/refs/heads/main/file/HR.csv"
+    df = load_data(file_path)
     assert df is not None, "Data should be loaded successfully"
 
     # Explore data
