@@ -10,7 +10,9 @@ from mylib.lib import (
 )
 
 if __name__ == "__main__":
-    ppl = load_data("HR.csv")
+
+    file_path = "https://raw.githubusercontent.com/nogibjj/Mini_PJT_9_Cloud-Hosted-Notebook-Data-Manipulation/refs/heads/main/file/HR.csv"
+    ppl = load_data(file_path)
 
     explore_data(ppl)
 
